@@ -1,0 +1,10 @@
+{
+    "modid": "vanillacurses",
+    "name": "${artifactId}",
+    "author_list": ["ocean"],
+    "description": "Random curse sources (cursed key, match and keep, transforming another curse) will only drop vanilla curses",
+    "version": "${project.version}",
+    "sts_version": "${SlayTheSpire.version}",
+    "mts_version": "${ModTheSpire.version}",
+    "update_json": "https://api.github.com/repos/OceanUwU/vanilla-curses/releases/latest"
+}
