@@ -4,19 +4,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>vanillacurses</groupId>
-    <artifactId>VanillaCurses</artifactId>
+    <groupId>stsdiscordpresence</groupId>
+    <artifactId>sts-discord-presence</artifactId>
     <version>v1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>Vanilla Curses</name>
-    <description>Random curse sources (cursed key, match and keep, transforming another curse) will only drop vanilla curses</description>
+    <name>STS Discord Presence</name>
+    <description>Discord rich presence for Slay the Spire</description>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <SlayTheSpire.version>12-22-2020</SlayTheSpire.version>
         <ModTheSpire.version>3.23.4</ModTheSpire.version>
+        <DiscordRPC.version>1.6.2</DiscordRPC.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--CHANGE THIS TO YOUR STEAM INSTALLATION-->
         <Steam.path>D:\Prog\Steam\steamapps</Steam.path>
@@ -36,6 +37,13 @@
             <version>${ModTheSpire.version}</version>
             <scope>system</scope>
             <systemPath>${basedir}/../lib/ModTheSpire.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>net.arikia.dev</groupId>
+            <artifactId>discord-rpc</artifactId>
+            <version>${DiscordRPC.version}</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/../lib/discord-rpc.jar</systemPath>
         </dependency>
     </dependencies>
 
