@@ -28,6 +28,9 @@ public class Client {
     }
 
     public static void FloorInfo() {
+        if (AbstractDungeon.currMapNode == null)
+            return;
+
         String roomType;
         if (AbstractDungeon.floorNum == 0)
             roomType = "Neow";
