@@ -37,6 +37,6 @@ public class Menu {
             totalRuns += cs.getVictoryCount();
             totalRuns += cs.getDeathCount(); 
         }
-        Client.UpdatePresence("Main menu", "Gearing up for their " + ordinal(totalRuns+1) + " run", false);
+        Client.UpdatePresence("Main menu", "Gearing up for their " + ordinal(totalRuns+1) + " run", "cover", "", false);
     }
 }
