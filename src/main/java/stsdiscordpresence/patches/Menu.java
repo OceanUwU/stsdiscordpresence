@@ -1,4 +1,4 @@
-package patches;
+package stsdiscordpresence.patches;
 
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -37,6 +37,7 @@ public class Menu {
             totalRuns += cs.getVictoryCount();
             totalRuns += cs.getDeathCount(); 
         }
+        Client.startTime = -1L;
         Client.UpdatePresence("Main menu", "Gearing up for their " + ordinal(totalRuns+1) + " run", "cover", "", false);
     }
 }

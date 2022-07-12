@@ -1,4 +1,4 @@
-package patches;
+package stsdiscordpresence.patches;
 
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import net.arikia.dev.drpc.DiscordRPC;

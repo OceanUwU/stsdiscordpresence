@@ -26,7 +26,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Client {
-    public static long startTime;
+    public static long startTime = -1L;
 
     public static ArrayList<String> portraits = new ArrayList<String>(Arrays.asList("ironclad", "silent", "defect", "watcher", "hermit", "slimeboss", "guardian", "hexaghost", "champ", "automaton", "gremlins", "snecko"));
 
@@ -44,6 +44,8 @@ public class Client {
     }
 
     public static void FloorInfo() {
+        if (startTime == -1L)
+            return;
         if (AbstractDungeon.currMapNode == null)
             return;
 
