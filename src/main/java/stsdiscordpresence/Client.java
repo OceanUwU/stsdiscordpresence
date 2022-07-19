@@ -105,7 +105,12 @@ public class Client {
             smallImage = "event";
         }
         else {
-            roomType = "Modded room - " + Pattern.compile(".+\\.", Pattern.MULTILINE).matcher(AbstractDungeon.currMapNode.room.getClass().getName()).replaceAll("");
+            try {
+                roomType = "Modded room - " + Pattern.compile(".+\\.", Pattern.MULTILINE).matcher(AbstractDungeon.currMapNode.room.getClass().getName()).replaceAll("");
+            } catch (Exception e) {
+                e.printStackTrace();
+                roomType = "Modded room";
+            }
             smallImage = "win";
         }
         
